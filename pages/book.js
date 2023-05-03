@@ -11,7 +11,6 @@ const PlaceholderImage = require('../assets/images/box.jpg');
 
 export default function Book() {
     const { state } = useLocation();
-  
     console.log(state.book);
     const [infoBook, setInfoBook] = useState(false);
     const navigate = useNavigate();
@@ -35,7 +34,7 @@ export default function Book() {
         />
       <Button style={styles.designButton} onPress={goBack} title="Retour" />
     </View>
-      {/* <Footer /> */}
+    
     </View>
   )
 }
@@ -57,7 +56,6 @@ const styles = StyleSheet.create({
         marginLeft: "35%",
     },
     designText: {
-      // resizeMode: .8,
       position: 'absolute',
       top: 115,
       fontWeight: 'bold',
